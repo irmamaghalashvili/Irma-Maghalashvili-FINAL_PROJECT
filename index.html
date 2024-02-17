@@ -1,102 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your cat-related website description" />
+    <meta name="keywords" content="cats, pets, feline" />
+    <meta name="author" content="Your Name" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your cat-related website description">
-    <meta name="keywords" content="cats, pets, feline">
-    <meta name="author" content="Your Name">
-
-
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/fonts.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="./assets/styles/responcive.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/responcive.css" />
     <script src="./script.js" defer></script>
+    <script src="./slider.js" defer></script>
     <title>Cat Lover's Paradise</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1>Cat Lover's Paradise</h1>
+      <h1>Cat Lover's Paradise</h1>
 
-        <nav id="mainNav" class="navigation">
-            <ul>
-                <li><a href="#aboutCats">About Cats</a></li>
-                <li><a href="#feeding">Feeding</a></li>
-                <li><a href="#bathing">Bathing</a></li>
-                <li><a href="#healthCare">Health Care</a></li>
-                <li><a href="#reproduction">Reproduction</a></li>
-                <li><a href="#feedback">Feedback & Registration</a></li>
-            </ul>
-        </nav>
+      <nav id="mainNav" class="navigation">
+        <ul>
+          <li><a href="#aboutCats">About Cats</a></li>
+          <li><a href="#feeding">Feeding</a></li>
+          <li><a href="#bathing">Bathing</a></li>
+          <li><a href="#healthCare">Health Care</a></li>
+          <li><a href="#reproduction">Reproduction</a></li>
+          <li><a href="#feedback">Feedback & Registration</a></li>
+        </ul>
+      </nav>
 
-        <div id="burgerIcon" class="burger">&#9776;</div>
+      <div id="burgerIcon" class="burger">&#9776;</div>
     </header>
-    
 
     <section id="aboutCats">
-        <h2>About Cats</h2>
+      <h2>About Cats</h2>
 
+      <!-- Slider -->
+      <button id="prevButton">Previous</button>
+<!-- Slider -->
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="./assets/images/cat-1.jpg" alt="Cute Cat 1">
+            <h3>Cat Title 1</h3>
+            <p>Description of the first cat...</p>
+        </div>
+        <div class="slide">
+            <img src="./assets/images/cat-2.jpg" alt="Cute Cat 2">
+            <h3>Cat Title 2</h3>
+            <p>Description of the second cat...</p>
+        </div>
+        <div class="slide">
+            <img src="./assets/images/cat-3.jpg" alt="Cute Cat 3">
+            <h3>Cat Title 3</h3>
+            <p>Description of the third cat...</p>
+        </div>
+    </div>
+</div>
+
+      <button id="nextButton">Next</button>
+      
     </section>
 
     <section id="feeding">
-        <h2>How to Feed Your Cat</h2>
-        <!-- Add content about feeding cats -->
+      <h2>How to Feed Your Cat</h2>
+      <!-- Add content about feeding cats -->
     </section>
 
     <section id="bathing">
-        <h2>How to Bathe Your Cat</h2>
-        <!-- Add content about bathing cats -->
+      <h2>How to Bathe Your Cat</h2>
+      <!-- Add content about bathing cats -->
     </section>
 
     <section id="healthCare">
-        <h2>Cat Health Care</h2>
-        <!-- Add content about cat health care -->
+      <h2>Cat Health Care</h2>
+      <!-- Add content about cat health care -->
     </section>
 
     <section id="reproduction">
-        <h2>Cat Reproduction</h2>
-        <!-- Add content about cat reproduction -->
+      <h2>Cat Reproduction</h2>
+      <!-- Add content about cat reproduction -->
     </section>
 
     <section id="feedback">
-        <h2>Feedback and Registration</h2>
-    
-        <h4>Join Us</h4>
-        <form id="registrationForm">
-            <label for="regEmail">Email:</label>
-            <input type="email" id="regEmail" name="regEmail" required>
-            <span id="regEmailError" class="error"></span>
-    
-            <label for="regPassword">Password:</label>
-            <input type="password" id="regPassword" name="regPassword" required>
-            <span id="regPasswordError" class="error"></span>
-    
-            <button type="submit">Register</button>
-        </form>
-    
-        <h4>Leave a Feedback</h4>
-        <form id="feedbackForm">
-            <label for="feedbackEmail">Email:</label>
-            <input type="email" id="feedbackEmail" name="feedbackEmail" required>
-            <span id="feedbackEmailError" class="error"></span>
-    
-            <label for="feedbackMessage">Feedback:</label>
-            <textarea id="feedbackMessage" name="feedbackMessage" rows="4" required></textarea>
-            <span id="feedbackMessageError" class="error"></span>
-    
-            <button type="submit">Submit Feedback</button>
-        </form>
+      <h2>Feedback and Registration</h2>
+
+      <h4>Join Us</h4>
+      <form id="registrationForm">
+        <label for="regEmail">Email:</label>
+        <input type="email" id="regEmail" name="regEmail" required />
+        <span id="regEmailError" class="error"></span>
+
+        <label for="regPassword">Password:</label>
+        <input type="password" id="regPassword" name="regPassword" required />
+        <span id="regPasswordError" class="error"></span>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <h4>Leave a Feedback</h4>
+      <form id="feedbackForm">
+        <label for="feedbackEmail">Email:</label>
+        <input type="email" id="feedbackEmail" name="feedbackEmail" required />
+        <span id="feedbackEmailError" class="error"></span>
+
+        <label for="feedbackMessage">Feedback:</label>
+        <textarea
+          id="feedbackMessage"
+          name="feedbackMessage"
+          rows="4"
+          required
+        ></textarea>
+        <span id="feedbackMessageError" class="error"></span>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
     </section>
 
     <footer>
-        <!-- Add footer content -->
-        <p>&copy; 2024 Cat Lover's Paradise</p>
+      <!-- Add footer content -->
+      <p>&copy; 2024 Cat Lover's Paradise</p>
     </footer>
-
-</body>
-
+  </body>
 </html>

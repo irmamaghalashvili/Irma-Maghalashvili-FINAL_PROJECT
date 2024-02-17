@@ -31,3 +31,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'TextMeOne';
+    src: url('../fonts/TextMeOne-Regular.eot');
+    src: url('../fonts/TextMeOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextMeOne-Regular.woff2') format('woff2'),
+        url('../fonts/TextMeOne-Regular.woff') format('woff'),
+        url('../fonts/TextMeOne-Regular.svg#TextMeOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

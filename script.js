@@ -1,3 +1,4 @@
+"use strict";
 
     document.addEventListener('DOMContentLoaded', function () {
         const registrationForm = document.getElementById('registrationForm');
@@ -74,4 +75,7 @@
             }
         });
     });
+
+    
+
     
