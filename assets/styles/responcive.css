@@ -24,6 +24,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
     .navigation ul {
         flex-direction: column;
         align-items: center;
