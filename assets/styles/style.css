@@ -102,18 +102,7 @@ section {
   padding: 2em;
 }
 
-footer {
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  color: rgb(75, 73, 105);
-  text-align: center;
-  padding: 1em;
-  bottom: 0;
-  width: 100%;
-}
+
 form {
   margin-top: 20px;
   max-width: 900px;
@@ -340,4 +329,40 @@ textarea {
   margin: 5px 0;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/* footer */
+
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(207, 183, 192, 0.8) 0%,
+    rgba(189, 206, 225, 0.8) 100%
+  );
+  color: rgb(75, 73, 105);
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+.footer-social-icons {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-brands {
+  background: linear-gradient(
+    90deg,
+    rgba(207, 183, 192, 0.8) 0%,
+    rgba(189, 206, 225, 0.8) 100%
+  );
+  color: rgb(75, 73, 105);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
 }
