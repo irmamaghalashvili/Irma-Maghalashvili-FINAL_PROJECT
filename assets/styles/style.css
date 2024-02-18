@@ -202,15 +202,18 @@ textarea {
 
 .feeding-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
+  align-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .feeding-image img {
-  max-width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
@@ -230,6 +233,7 @@ textarea {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .bathing-video {
