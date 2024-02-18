@@ -9,10 +9,18 @@ h1 {
   font-size: 40px;
   font-weight: 600;
 }
-h2 {
+h2, h3 {
+  padding: 15px;
   font-family: Poppins;
   font-size: 30px;
   font-weight: 500;
+}
+p {
+  margin: 15px;
+  padding: 15px;
+  font-family: TextMeOne;
+  font-size: 20px;
+  text-align: center;
 }
 header {
   background-color: #333;
@@ -61,7 +69,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -101,8 +109,12 @@ button {
 }
 
 .slider {
-    display: flex; /* Adjust display property */
+    display: flex;
     transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
 }
 
 .slide {
@@ -113,5 +125,34 @@ button {
 
 .slide img {
     width: 50%;
-    max-height: 700px;
+    max-height: 800px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+/* feeding */
+
+#feeding {
+  text-align: center;
+}
+
+.feeding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feeding-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feeding-article {
+  max-width: 600px;
+  margin-left: 20px;
 }
