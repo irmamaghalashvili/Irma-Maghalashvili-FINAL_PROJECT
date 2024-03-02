@@ -7,23 +7,23 @@ body {
 }
 h1 {
   font-family: "Yellotale";
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   color: rgb(75, 73, 105);
 }
 h2 {
-  padding: 15px;
+  padding: 10px;
   font-family: "Poppins";
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   color: rgb(75, 73, 105);
   text-align: center;
 }
 h3,
 h4 {
-  padding: 15px;
+  padding: 10px;
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: rgb(75, 73, 105);
   text-align: center;
@@ -32,7 +32,7 @@ p {
   margin: 15px;
   padding: 15px;
   font-family: "TextMeOne";
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 header {
@@ -48,7 +48,7 @@ header {
   );
   color: rgb(17, 14, 65);
   text-align: center;
-  padding: 1em;
+  padding-top: 10px;
 }
 .navigation {
   display: flex;
@@ -75,7 +75,7 @@ header {
   color: rgb(75, 73, 105);
   font-weight: bold;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 15px;
 }
 .showNav {
   z-index: 15;
@@ -374,5 +374,5 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
 }
