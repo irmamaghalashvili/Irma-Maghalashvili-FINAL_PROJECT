@@ -265,11 +265,46 @@
         <span id="regEmailError" class="error"></span>
 
         <label for="regPassword">Password:</label>
-        <input type="password" id="regPassword" name="regPassword" required />
+        <input type="password" class="password" id="regPassword" name="regPassword" required />
+        <i class="fa-solid fa-eye toggleIcon"></i>
         <span id="regPasswordError" class="error"></span>
 
+        <label for="regPassword2">Repete password:</label>
+        <input type="password" class="password" id="regPassword2" name="regPassword2" required />
+        <i class="fa-solid fa-eye toggleIcon"></i>
+        <span id="regPasswordError2" class="error"></span>
+        <div>
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="male">Female</label>
+          <input type="radio" name="gender" id="other">
+          <label for="other">Other</label>
+          <span id="errorGender" class="error"></span>
+          <input type="checkbox" name="agree" id="checkfield">
+          <label for="checkfield">Agree terms and conditions</label>
+          <span class="error" id="errorAgree"></span>
+        </div>
+        
+
         <button type="submit">Register</button>
+        <span>Or</span>
+        <div class="log-in-btn" id="logInBtn">log in</div>
       </form>
+      
+        <div class="log-in-form " id="logIn">
+          <form id="logInForm">
+            <label for="logInEmail">Email:</label>
+            <input type="email" id="logInEmail" name="logInEmail" required />
+            <span id="regEmailError" class="error"></span>
+    
+            <label for="logInPassword">Password:</label>
+            <input type="password" class="password" id="logInPassword" name="logInPassword" required />
+            <i class="fa-solid fa-eye toggleIcon"></i>
+            <span id="logInPasswordError" class="error"></span>
+            <button type="submit"> Log in</button>
+          </form>
+        </div>
       <h4>Leave a Feedback</h4>
       <form id="feedbackForm">
         <label for="feedbackEmail">Email:</label>

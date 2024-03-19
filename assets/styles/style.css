@@ -115,7 +115,6 @@ form button {
     rgba(189, 206, 225, 0.8) 100%
   );
   color: rgb(75, 73, 105);
-  color: rgb(75, 73, 105);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -340,6 +339,30 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+/* forms */
+.log-in-btn {
+  display: inline-block;
+  width: 80px;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 183, 192, 0.8) 0%,
+    rgba(189, 206, 225, 0.8) 100%
+  );
+  color: rgb(75, 73, 105);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.log-in-form {
+  display: none;
+}
+.log-in-form.show-form {
+  display: block;
+}
+
 /* footer */
 
 footer {

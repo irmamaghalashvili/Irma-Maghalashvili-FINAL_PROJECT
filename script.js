@@ -1,50 +1,134 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const registrationForm = document.getElementById("registrationForm");
-  const feedbackForm = document.getElementById("feedbackForm");
+  let registrationForm = document.getElementById("registrationForm");
+  let feedbackForm = document.getElementById("feedbackForm");
+  let logInForm = document.getElementById("logInForm");
 
   registrationForm.addEventListener("submit", function (event) {
     event.preventDefault();
     validateRegistrationForm();
   });
 
-  feedbackForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+  feedbackForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
     validateFeedbackForm();
   });
 
-  function validateRegistrationForm() {
-    const regEmailInput = document.getElementById("regEmail");
-    const regPasswordInput = document.getElementById("regPassword");
-    const regEmailError = document.getElementById("regEmailError");
-    const regPasswordError = document.getElementById("regPasswordError");
+  logInForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    validateLogInForm();
+  });
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function validateRegistrationForm(event) {
+
+    let regEmailInput = document.getElementById("regEmail");
+    let regPasswordInput = document.getElementById("regPassword");
+    let regPasswordInput2 = document.getElementById("regPassword2");
+    let regEmailError = document.getElementById("regEmailError");
+    let regPasswordError = document.getElementById("regPasswordError");
+    let regPasswordError2 = document.getElementById("regPasswordError2");
+    let radioElements = document.querySelectorAll('[name="gender"]');
+    let checkBoxAgree = document.getElementById("checkfield").checked;
+    let genderError = document.getElementById("errorGender");
+    let agreeError = document.getAnimations("errorAgree");
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(regEmailInput.value)) {
-      regEmailError.textContent = "Please enter a valid email address";
+      regEmailError = "Please enter a valid email address";
     } else {
-      regEmailError.textContent = "";
+        regEmailError.textContent = "";
     }
 
     // Password should be at least 6 characters
     if (regPasswordInput.value.length < 6) {
       regPasswordError.textContent = "Password should be at least 6 characters";
     } else {
-      regPasswordError.textContent = "";
+        regPasswordError.textContent = "";
     }
-  }
 
+    if (regPasswordInput.value !== regPasswordInput2.value) {
+      regPasswordError2.textContent = "Passwords do not match";
+    } else {
+        regPasswordError2.textContent = "";
+    }
+
+    // radio
+    let gender = false;
+    radioElements.forEach((item) => {
+        if (item.checked) {
+            gender = true;
+        }
+    });
+
+    if (!gender) {
+      genderError.textContent = "Please select your gender";
+    } else {
+      genderError.textContent = "";
+    }
+
+    // checkbox
+    if (!checkBoxAgree) {
+      agreeError.textContent = "You must agree to our terms and conditions";
+    } else {
+      agreeError.textContent = "11";
+    }
+
+    // If no errors, submit the form
+    if (regEmailError.textContent === "" && regPasswordError.textContent === "" && regPasswordError2.textContent === "" && genderError.textContent === "" && agreeError.textContent === "") {
+        event.target.submit();
+    }
+}
+
+
+
+// log in
+let logInBtn = document.getElementById("logInBtn");
+let logInDiv = document.getElementById("logIn");
+
+logInBtn.addEventListener('click', function() {
+  console.log("hello");
+  logInDiv.classList.toggle("show-form");
+});
+
+
+function validateLogInForm(event) {
+
+    let logInEmailInput = document.getElementById("logInEmail");
+    let logInPasswordInput = document.getElementById("logInPassword");
+    let logInEmailError = document.getElementById("logInEmailError");
+    let logInPasswordError = document.getElementById("logInPasswordError");
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(logInEmailInput.value)) {
+      logInEmailError.textContent = "Please enter a valid email address";
+    } else {
+        logInEmailError.textContent = "";
+    }
+
+    // Password should be at least 6 characters
+    if (logInPasswordInput.value.length < 6) {
+      logInPasswordError.textContent = "Password should be at least 6 characters";
+    } else {
+        logInPasswordError.textContent = "";
+    }
+
+
+    // If no errors, submit the form
+    if (logInEmailError.textContent === "" & logInPasswordError.textContent === "") {
+        event.target.submit();
+    }
+}
+
+  // feedback
   function validateFeedbackForm() {
-    const feedbackEmailInput = document.getElementById("feedbackEmail");
-    const feedbackMessageInput = document.getElementById("feedbackMessage");
-    const feedbackEmailError = document.getElementById("feedbackEmailError");
-    const feedbackMessageError = document.getElementById(
-      "feedbackMessageError"
-    );
+    let feedbackEmailInput = document.getElementById("feedbackEmail");
+    let feedbackMessageInput = document.getElementById("feedbackMessage");
+    let feedbackEmailError = document.getElementById("feedbackEmailError");
+    let feedbackMessageError = document.getElementById("feedbackMessageError");
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(feedbackEmailInput.value)) {
       feedbackEmailError.textContent = "Please enter a valid email address";
@@ -58,11 +142,26 @@ document.addEventListener("DOMContentLoaded", function () {
       feedbackMessageError.textContent = "";
     }
   }
-});
 
+  let password = document.querySelectorAll(".password");
+  let icon = document.querySelectorAll(".toggleIcon");
+  icon.addEventListener('click', function() {
+    console.log("hello");
+    if (password.type == "password") {
+      password.setAttribute("type", "text");
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
+    } else {
+      password.setAttribute("type", "password");
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
+    }
+  })
+
+// burger
 document.addEventListener("DOMContentLoaded", function () {
-  const burgerIcon = document.getElementById("burgerIcon");
-  const mainNav = document.getElementById("mainNav");
+  let burgerIcon = document.getElementById("burgerIcon");
+  let mainNav = document.getElementById("mainNav");
 
   burgerIcon.addEventListener("click", function () {
     mainNav.classList.toggle("showNav");
@@ -86,7 +185,7 @@ function getUsers(page) {
     let gotInfoText = requist.responseText;
     let gotIfoJs = JSON.parse(gotInfoText);
 
-    const fragment = new DocumentFragment();
+    let fragment = new DocumentFragment();
     gotIfoJs.data.forEach((item) => {
       let li = document.createElement("li");
       li.innerText = `${item.first_name} ${item.last_name}`;
