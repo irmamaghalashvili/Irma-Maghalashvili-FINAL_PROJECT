@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: "Arial";
   margin: 0;
   padding: 0;
@@ -441,4 +441,24 @@ li:hover {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+/* font page */
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/709125268d60280e13942c61cdd3f0e4.gif');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(247, 245, 245, 0.5);
 }
