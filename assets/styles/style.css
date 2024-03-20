@@ -444,21 +444,52 @@ li:hover {
 }
 
 /* font page */
+
 .background-image {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/709125268d60280e13942c61cdd3f0e4.gif');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
+.ginger-cat {
+  position: absolute;
+  width: 300px;
+  animation: slideBackground 15s linear infinite;
+  -webkit-animation: slideBackground 15s linear infinite;
+}
+.lazy-cat {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+}
+.black-cat {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 100px;
+}
 .content {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(247, 245, 245, 0.5);
+  border-radius: 5px;
+  background-color: hsl(50, 50%, 95%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(247, 245, 245, 0.1);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+
+/* animations */
+@keyframes slideBackground {
+  0% { left: 0px; }
+  100% { left: 100%; }
 }
