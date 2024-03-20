@@ -7,7 +7,7 @@ body {
 }
 h1 {
   font-family: "Yellotale";
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 800;
   color: rgb(75, 73, 105);
 }
@@ -59,12 +59,13 @@ header {
 .navigation ul {
   list-style: none;
   display: flex;
-  margin: 20px;
+  margin: 5px;
   padding: 0;
 }
 
 .navigation li {
   margin: 0 15px;
+  padding: 5px;
 }
 .navigation li:hover {
   text-decoration: underline;
@@ -128,7 +129,7 @@ label {
 
 input,
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   margin-bottom: 10px;
 }
@@ -355,7 +356,25 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.log-in-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.fa-eye, .fa-eye-slash {
+  cursor: pointer;
+}
+.fa-eye:hover {
+  zoom: 1;
+}
+button {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .log-in-form {
   display: none;
 }
@@ -373,8 +392,7 @@ footer {
   );
   color: rgb(75, 73, 105);
   text-align: center;
-  padding: 1em;
-  bottom: 0;
+  padding: 5px;
   width: 100%;
 }
 .footer-social-icons {
@@ -386,6 +404,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+
 .fa-brands {
   background: linear-gradient(
     90deg,
@@ -398,4 +417,22 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
+}
+p:hover {
+  border-radius: 5px;
+  background-color: hsl(50, 50%, 95%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+li:hover {
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
