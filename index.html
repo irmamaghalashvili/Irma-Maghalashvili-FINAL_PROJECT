@@ -273,20 +273,18 @@
         <input type="password" class="password" id="regPassword2" name="regPassword2" required />
         <i class="fa-solid fa-eye" id="eyeIcon2"></i>
         <span id="regPasswordError2" class="error"></span>
-        <div>
-          <input type="radio" name="gender" id="male">
+        <div class="gender-dots">
           <label for="male">Male</label>
+          <input type="radio" name="gender" id="male">
+          <label for="female">Female</label>
           <input type="radio" name="gender" id="female">
-          <label for="male">Female</label>
-          <input type="radio" name="gender" id="other">
           <label for="other">Other</label>
+          <input type="radio" name="gender" id="other">
           <span id="errorGender" class="error"></span>
-          <input type="checkbox" name="agree" id="checkfield">
           <label for="checkfield">Agree terms and conditions</label>
+          <input type="checkbox" name="agree" id="checkfield">
           <span class="error" id="errorAgree"></span>
         </div>
-        
-
         <button type="submit">Register</button>
         <span>Or</span>
         <div class="log-in-btn" id="logInBtn">log in</div>

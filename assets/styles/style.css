@@ -381,7 +381,13 @@ button:hover {
 .log-in-form.show-form {
   display: block;
 }
-
+.gender-dots label {
+  display: inline-block;
+  width: 45%;
+}
+.gender-dots input {
+  width: 45%;
+}
 /* footer */
 
 footer {
