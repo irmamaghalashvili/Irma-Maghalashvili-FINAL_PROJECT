@@ -90,7 +90,6 @@ let logInBtn = document.getElementById("logInBtn");
 let logInDiv = document.getElementById("logIn");
 
 logInBtn.addEventListener("click", function () {
-  console.log("hello");
   logInDiv.classList.toggle("show-form");
 });
 

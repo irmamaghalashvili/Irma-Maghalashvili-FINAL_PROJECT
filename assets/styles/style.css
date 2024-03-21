@@ -93,7 +93,6 @@ header {
   font-weight: bold;
   font-family: Roboto;
   font-size: 20px;
-
 }
 .burger {
   display: none;
@@ -102,7 +101,6 @@ header {
 section {
   padding: 2em;
 }
-
 
 form {
   margin-top: 20px;
@@ -174,7 +172,6 @@ textarea {
   -moz-transition: transform 0.5s ease;
   -ms-transition: transform 0.5s ease;
   -o-transition: transform 0.5s ease;
-
 }
 
 .slide {
@@ -361,7 +358,8 @@ textarea {
 .log-in-btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.fa-eye, .fa-eye-slash {
+.fa-eye,
+.fa-eye-slash {
   cursor: pointer;
 }
 .fa-eye:hover {
@@ -486,10 +484,94 @@ li:hover {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #7e41ff, #4b0082);
+  animation: roll 5s linear infinite;
+  -webkit-animation: roll 5s linear infinite;
+  z-index: 2;
+}
+.cat-in-box {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.cat-paw {
+  width: 50px;
+  position: absolute;
+  opacity: 0;
+}
 
+.cat-paw1 {
+  top: 30%;
+  left: 0;
+  animation: pawAnimation 12s linear 1s infinite;
+  -webkit-animation: pawAnimation 12s linear 1s infinite;
+}
+
+.cat-paw2 {
+  top: 20%;
+  left: 4%;
+  animation: pawAnimation 12s linear 4s infinite;
+  -webkit-animation: pawAnimation 12s linear 4s infinite;
+}
+
+.cat-paw3 {
+  top: 10%;
+  left: 8%;
+  animation: pawAnimation 12s linear 7s infinite;
+  -webkit-animation: pawAnimation 12s linear 7s infinite;
+}
+
+.cat-paw4 {
+  top: 0;
+  left: 12%;
+  animation: pawAnimation 12s linear 10s infinite;
+  -webkit-animation: pawAnimation 12s linear 10s infinite;
+}
 
 /* animations */
+
+@keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+  25%,
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes slideBackground {
-  0% { left: 0px; }
-  100% { left: 100%; }
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes roll {
+  0% {
+    left: 0;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    left: 22%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
 }
