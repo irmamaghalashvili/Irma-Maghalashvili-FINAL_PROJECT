@@ -1,11 +1,11 @@
 "use strict";
 // burger.js
-export default function initBurger() {
+export function initBurger() {
     let burgerIcon = document.getElementById("burgerIcon");
     let mainNav = document.getElementById("mainNav");
 
     burgerIcon.addEventListener("click", function () {
-        console.log("hello");
+        console.log(error);
         mainNav.classList.toggle("showNav");
     });
 

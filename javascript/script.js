@@ -1,6 +1,6 @@
 "use strict";
-import { default as initBurger } from "./burger.js";
-
+import { initBurger } from "./burger.js";
+ 
 initBurger();
 
 let registrationForm = document.getElementById("registrationForm");
