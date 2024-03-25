@@ -6,15 +6,17 @@
     <meta name="description" content="Your cat-related website description" />
     <meta name="keywords" content="cats, pets, feline" />
     <meta name="author" content="Your Name" />
-
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="Description of your website" />
+    <meta property="og:image" content="URL of the image you want to display" />
+    <meta property="og:url" content="URL of your website" />
+    <meta property="og:type" content="website" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./assets/styles/responcive.css" />
+    <link rel="stylesheet" href="./assets/styles/responcive.css">
     <script src="./script.js" defer></script>
     <script src="./slider.js" defer></script>
     <title>Cat Lover's Paradise</title>
@@ -151,7 +153,7 @@
             height="315"
             src="https://www.youtube.com/embed/S0DlV8mZTd8?si=aQEZMi0ZCFo4MJba"
             title="YouTube video player"
-            style="border: none;"
+            style="border: none"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
@@ -266,44 +268,62 @@
         <span id="regEmailError" class="error"></span>
 
         <label for="regPassword">Password:</label>
-        <input type="password" class="password" id="regPassword" name="regPassword" required />
+        <input
+          type="password"
+          class="password"
+          id="regPassword"
+          name="regPassword"
+          required
+        />
         <i class="fa-solid fa-eye" id="eyeIcon"></i>
         <span id="regPasswordError" class="error"></span>
 
         <label for="regPassword2">Repete password:</label>
-        <input type="password" class="password" id="regPassword2" name="regPassword2" required />
+        <input
+          type="password"
+          class="password"
+          id="regPassword2"
+          name="regPassword2"
+          required
+        />
         <i class="fa-solid fa-eye" id="eyeIcon2"></i>
         <span id="regPasswordError2" class="error"></span>
         <div class="gender-dots">
           <label for="male">Male</label>
-          <input type="radio" name="gender" id="male">
+          <input type="radio" name="gender" id="male" />
           <label for="female">Female</label>
-          <input type="radio" name="gender" id="female">
+          <input type="radio" name="gender" id="female" />
           <label for="other">Other</label>
-          <input type="radio" name="gender" id="other">
+          <input type="radio" name="gender" id="other" />
           <span id="errorGender" class="error"></span>
           <label for="checkfield">Agree terms and conditions</label>
-          <input type="checkbox" name="agree" id="checkfield">
+          <input type="checkbox" name="agree" id="checkfield" />
           <span class="error" id="errorAgree"></span>
         </div>
         <button type="submit">Register</button>
         <span>Or</span>
         <div class="log-in-btn" id="logInBtn">log in</div>
       </form>
-      
-        <div class="log-in-form " id="logIn">
-          <form id="logInForm">
-            <label for="logInEmail">Email:</label>
-            <input type="email" id="logInEmail" name="logInEmail" required />
-            <span id="regEmailError" class="error"></span>
-    
-            <label for="logInPassword">Password:</label>
-            <input type="password" class="password" id="logInPassword" name="logInPassword" required />
-            <i class="fa-solid fa-eye" id="eyeIcon3"></i>
-            <span id="logInPasswordError" class="error"></span>
-            <button type="submit"> Log in</button>
-          </form>
-        </div>
+
+      <div class="log-in-form" id="logIn">
+        <form id="logInForm">
+          <label for="logInEmail">Email:</label>
+          <input type="email" id="logInEmail" name="logInEmail" required />
+          <span id="regEmailError" class="error"></span>
+
+          <label for="logInPassword">Password:</label>
+          <input
+            type="password"
+            class="password"
+            id="logInPassword"
+            name="logInPassword"
+            required
+          />
+          <i class="fa-solid fa-eye" id="eyeIcon3"></i>
+          <span id="logInPasswordError" class="error"></span>
+          <button type="submit">Log in</button>
+        </form>
+      </div>
       <h4>Leave a Feedback</h4>
       <form id="feedbackForm">
         <label for="feedbackEmail">Email:</label>
@@ -353,7 +373,9 @@
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
-      <p style="font-weight: 600; padding: 5px; margin: 5px;">&copy; 2024 Cat Lover's Paradise</p>
+      <p style="font-weight: 600; padding: 5px; margin: 5px">
+        &copy; 2024 Cat Lover's Paradise
+      </p>
     </footer>
   </body>
 </html>

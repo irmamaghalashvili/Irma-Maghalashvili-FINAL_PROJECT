@@ -1,58 +1,70 @@
 /* Desktop */
 @media only screen and (min-width: 1024px) {
-    section {
-        padding: 2em;
-    }
+  section {
+    padding: 2em;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
-    section {
-        padding: 1.5em;
-    }
+  section {
+    padding: 1.5em;
+  }
 }
 
 /* Phone */
 @media only screen and (max-width: 599px) {
-    section {
-        padding: 1em;
-    }
+  section {
+    padding: 1em;
+  }
 
-    footer {
-        position: static;
-    }
+  footer {
+    position: static;
+  }
 }
 
 @media only screen and (max-width: 768px) {
     .navigation {
-        display: none;
+      display: none;
     }
     .navigation ul {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      text-align: center;
+      padding: 0;
     }
-
+  
     .navigation li {
-        margin: 10px 0;
+      margin: 10px 0;
     }
-
+  
     .burger {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 1.5em;
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5em;
     }
-
+  
     .navigation.showNav {
-        display: block;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #f9f9f9;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
     }
-}
+  
+    header {
+      padding-top: 20px;
+    }
+  
+    .content {
+      padding: 1em;
+    }
+  }
+  

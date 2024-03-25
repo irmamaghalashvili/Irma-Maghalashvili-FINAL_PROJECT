@@ -1,3 +1,6 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+
 .body {
   font-family: "Arial";
   margin: 0;
@@ -175,14 +178,15 @@ textarea {
 }
 
 .slide {
+  height: 100%;
   flex: 0 0 100%;
   box-sizing: border-box;
   text-align: center;
 }
 
 .slide img {
-  width: 40%;
-  max-height: 600px;
+  width: auto;
+  height: 200px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -213,6 +217,7 @@ textarea {
 }
 
 .feeding-image img {
+  width: 100%;
   max-width: 500px;
   height: auto;
 }
@@ -227,6 +232,7 @@ textarea {
 }
 
 .bathing-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,9 +410,12 @@ footer {
   max-width: 400px;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  -webkit-align-items: center;
 }
 
 .fa-brands {
@@ -470,6 +479,7 @@ li:hover {
   width: 100px;
 }
 .content {
+  overflow-x: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -536,6 +546,19 @@ li:hover {
 
 /* animations */
 
+@-webkit-keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+  25%,
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes pawAnimation {
   0% {
     opacity: 1;
@@ -549,12 +572,42 @@ li:hover {
   }
 }
 
+@-webkit-keyframes slideBackground {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
 @keyframes slideBackground {
   0% {
     left: 0px;
   }
   100% {
-    left: 100%;
+    left: 80%;
+  }
+}
+
+@-webkit-keyframes roll {
+  0% {
+    left: 0;
+    bottom: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    left: 22%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
