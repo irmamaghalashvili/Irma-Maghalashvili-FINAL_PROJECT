@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 import { initBurger } from "./burger.js";
  
 initBurger();

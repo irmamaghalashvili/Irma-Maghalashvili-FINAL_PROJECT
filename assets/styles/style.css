@@ -648,34 +648,35 @@ li:hover {
 }
 
 /* font page */
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.front-page-body {
+  background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
 }
+
 .ginger-cat {
   position: absolute;
-  width: 300px;
+  width: 150px;
   animation: slideBackground 15s linear infinite;
   -webkit-animation: slideBackground 15s linear infinite;
 }
-.lazy-cat {
-  position: absolute;
-  width: 300px;
-  bottom: 0;
-  right: 0;
-}
+
 .black-cat {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 30%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 100px;
+  width: 150px;
+}
+.cat-head {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.lazy-cat {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
 }
 .content {
   overflow-x: hidden;
@@ -694,23 +695,7 @@ li:hover {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-.ball {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: -o-radial-gradient(50% 50%, circle, #7e41ff, #4b0082);
-  background: radial-gradient(circle at 50% 50%, #7e41ff, #4b0082);
-  animation: roll 5s linear infinite;
-  -webkit-animation: roll 5s linear infinite;
-  z-index: 2;
-}
-.cat-in-box {
-  width: 150px;
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-}
+
 .cat-paw {
   width: 50px;
   position: absolute;
@@ -787,49 +772,7 @@ li:hover {
     left: 0px;
   }
   100% {
-    left: 80%;
-  }
-}
-
-@-webkit-keyframes roll {
-  0% {
-    left: 0;
-    bottom: 30%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    left: 22%;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    left: 0;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes roll {
-  0% {
-    left: 0;
-    bottom: 30%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    left: 22%;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    left: 0;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    left: 70%;
   }
 }
 .example {
