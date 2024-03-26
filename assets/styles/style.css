@@ -144,23 +144,6 @@ form {
   margin: 0 auto;
 }
 form button {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
   color: rgb(75, 73, 105);
   padding: 10px 20px;
   border: none;
@@ -182,23 +165,6 @@ textarea {
 
 #prevButton,
 #nextButton {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
   color: rgb(75, 73, 105);
   padding: 10px 20px;
   border: none;
@@ -377,6 +343,7 @@ textarea {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .fa-arrow-up {
+  background-color: none;
   width: 50px;
   height: 50px;
   font-size: 30px;
@@ -385,23 +352,6 @@ textarea {
   right: 70px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
   color: rgb(75, 73, 105);
   padding: 10px;
   border: none;
@@ -495,23 +445,6 @@ textarea {
 .log-in-btn {
   display: inline-block;
   width: 80px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
   color: rgb(75, 73, 105);
   padding: 10px 20px;
   border: none;
@@ -533,6 +466,7 @@ textarea {
   zoom: 1;
 }
 button {
+  background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -678,24 +612,36 @@ li:hover {
   bottom: 0;
   width: 200px;
 }
-.content {
-  overflow-x: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-width: 20px;
+  border-color: red;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.enter-btn {
+  padding: 5px;
   text-align: center;
   border-radius: 5px;
-  background-color: hsl(50, 50%, 95%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transform: translate(-50%, -50%);
-  background-color: rgba(247, 245, 245, 0.1);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-
+.enter-btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .cat-paw {
   width: 50px;
   position: absolute;
