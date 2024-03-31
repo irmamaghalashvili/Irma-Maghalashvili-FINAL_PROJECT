@@ -1,6 +1,8 @@
 @import url("./reset.css");
 @import url("./fonts.css");
-
+#myHeader:hover {
+  opacity: 1;
+}
 .body {
   font-family: "Arial";
   margin: 0;
@@ -8,6 +10,29 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 100px;
+
+}
+#aboutCats,
+#bathing,
+#feedback {
+  background: rgb(207, 183, 192);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(207, 183, 192, 0.8)),
+    to(rgba(189, 206, 225, 0.8))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(207, 183, 192, 0.8) 0%,
+    rgba(189, 206, 225, 0.8) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 183, 192, 0.8) 0%,
+    rgba(189, 206, 225, 0.8) 100%
+  );
 }
 h1 {
   font-family: "Yellotale";
@@ -44,24 +69,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 15;
-  background: rgb(207, 183, 192);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
+  background-color: #f8f8ff;
   color: rgb(17, 14, 65);
   text-align: center;
   padding-top: 10px;
@@ -489,26 +497,11 @@ button:hover {
 .gender-dots input {
   width: 45%;
 }
+
 /* footer */
 
 footer {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(207, 183, 192, 0.8)),
-    to(rgba(189, 206, 225, 0.8))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(207, 183, 192, 0.8) 0%,
-    rgba(189, 206, 225, 0.8) 100%
-  );
+  background-color: #f8f8ff;
   color: rgb(75, 73, 105);
   text-align: center;
   padding: 5px;
@@ -580,6 +573,23 @@ li:hover {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+section {
+  border: 2px solid #dddddd; /* Border style */
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 20px; /* Optional: Add padding for spacing */
+  margin-bottom: 20px; /* Optional: Add margin for spacing between sections */
+}
+section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 20px; /* Optional: Add padding for spacing */
+  margin-bottom: 20px; /* Optional: Add margin for spacing between sections */
+}
+
+
+
+
+
 
 /* font page */
 .front-page-body {
@@ -740,4 +750,7 @@ li:hover {
   );
   background: -o-linear-gradient(top, white, black);
   background: linear-gradient(to bottom, white, black);
+}
+.hidden {
+  opacity: 0.5;
 }

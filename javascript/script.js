@@ -247,3 +247,14 @@ function getUsers(page) {
 }
 
 getUsers(currentPage);
+
+// header scroll
+let myHeader = document.getElementById("myHeader");
+
+window.onscroll = function () {
+  if (window.scrollY >300) {
+    myHeader.classList.add("hidden");
+  } else {
+    myHeader.classList.remove("hidden");
+  }
+};
